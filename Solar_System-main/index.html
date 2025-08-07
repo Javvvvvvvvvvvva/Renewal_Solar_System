@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive 3D Solar System with realistic orbital motion and beautiful UI">
+    <meta name="keywords" content="solar system, 3D, three.js, planets, space, astronomy">
+    <title>Solar System Explorer - Interactive 3D Experience</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading  -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-header">
+                <h1 class="loading-title">Solar System Explorer</h1>
+                <div class="loading-subtitle">Interactive 3D Experience</div>
+            </div>
+            
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Initializing...</div>
+            </div>
+            
+            <div class="loading-info">
+                <div class="info-section">
+                    <h3>Project Purpose</h3>
+                    <p>This interactive 3D solar system visualization brings the wonders of space to your browser. Experience realistic planetary motion, explore detailed planet information, and immerse yourself in a cosmic journey through our solar system.</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3>How to Use</h3>
+                    <ul>
+                        <li><strong>Planet Buttons:</strong> Click the buttons at the top to select different planets</li>
+                        <li><strong>Mini-View:</strong> See a close-up of the selected planet in the top-left panel</li>
+                        <li><strong>Information Panel:</strong> Learn detailed facts about each planet below the mini-view</li>
+                        <li><strong>Camera Controls:</strong> Use mouse to rotate, scroll to zoom, right-click to pan</li>
+                        <li><strong>Overview Button:</strong> Reset camera to full solar system view</li>
+                        <li><strong>Animation Controls:</strong> Pause/resume and adjust animation speed</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Realistic orbital and rotational motion</li>
+                        <li>Detailed planet textures and Saturn's rings</li>
+                        <li>Interactive mini-view with planet close-ups</li>
+                        <li>Comprehensive planet information and statistics</li>
+                        <li>Beautiful starfield background</li>
+                        <li>Responsive design for all devices</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Technology</h3>
+                    <p>Built with Three.js for 3D graphics, featuring realistic lighting, shadows, and smooth animations. The project demonstrates modern web development techniques for creating immersive educational experiences.</p>
+                </div>
+            </div>
+            
+            <div class="loading-footer">
+                <p>Loading textures and initializing 3D scene...</p>
+            </div>
+        </div>
+    </div>
+    
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
